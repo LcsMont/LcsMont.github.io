@@ -18,7 +18,7 @@ a{
 
 html{
     font-size: 62.5%;
-    overflow: hidden;
+    overflow: scroll;
 }
 
 body{
@@ -171,8 +171,52 @@ span{
 }
 
 /* Skills Section */
+.skills{
+    display: flex;
+    align-items: center;
+    justify-items: center;
+    flex-direction: column;
+}
 
+.skills-items{
+    display: flex;
+    grid-template-columns: repeat(3.1fr);
+    gap: 3rem;
+}
 
+.skill-card{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    cursor: pointer;
+    transition: 1s all cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+.skill-card:hover{
+    border-radius: 1rem solid;
+    transform: scale(1.05);
+}
+
+.skill-card .bx{
+    font-size: 8rem;
+}
+
+.skill-card .bx:hover{
+    color: aqua;
+    transition: 0.4s ease;
+}
+
+.skill-card h3{
+    font-size: 2.5rem;
+    font-weight: 200;
+}
+
+.skill-card p{
+    text-align: center;
+    font-size: 1.3rem;
+    opacity: 0.5;
+}
 /* Projects Sectio */
 
 
